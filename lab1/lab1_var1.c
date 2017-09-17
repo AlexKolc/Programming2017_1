@@ -3,7 +3,7 @@
 int main() {
     char s[50];
     printf("Input string: ");
-    scanf("%s", s);
+    gets(s);
     printf("Output string: %s\n", s);
     int a;
     printf("Input number: ");
