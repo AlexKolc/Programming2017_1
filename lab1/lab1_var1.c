@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    char s[50];
+    char str[50];
     printf("Input string: ");
-    gets(s);
-    printf("Output string: %s\n", s);
-    int a;
+    gets(str);
+    printf("Output string: %s\n", str);
+    int num;
     printf("Input number: ");
-    scanf("%d", &a);
-    printf("Output number: %d", a);
+    scanf("%d", &num);
+    printf("Output number: %d", num);
     return 1;
 }
