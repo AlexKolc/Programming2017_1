@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    const int sizeStr = 5;
+    const int sizeStr = 50;
     char str[sizeStr];
     int num;
     printf("Input string: ");
