@@ -1,13 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    char str[50];
-    printf("Input string: ");
-    gets(str);
-    printf("Output string: %s\n", str);
+    const int sizeStr = 5;
+    char str[sizeStr];
     int num;
+    printf("Input string: ");
+    fgets(str, sizeStr, stdin);
+    printf("Output string: %s\n", str);
+    fflush(stdin);
     printf("Input number: ");
     scanf("%d", &num);
     printf("Output number: %d", num);
-    return 1;
+    return 0;
 }
