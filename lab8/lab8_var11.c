@@ -62,6 +62,6 @@ int main() {
     while (tokens) {
         printf("      %s\n", tokens);
         tokens = strtok(NULL, str2);
-		}
+    }
     return 0;
 }
