@@ -28,20 +28,20 @@ int main() {
     printf("   Count lower letters in string = %d\n", cntLowers);
     printf("   Count upper letters in string = %d\n", cntUppers);
     
-    printf("2. Продолжительность разговоров = ");
+    printf("2. Talk time = ");
     scanf("%d", &talkTime);
-    printf("   Величина абонентской платы = ");
+    printf("   Subscription fee = ");
     scanf("%d", &subscriptionFee);
-    printf("   Cтоимость минуты сверх лимита = ");
+    printf("   Cost minute over the limit = ");
     scanf("%d", &costMinute);
     while (costMinute < (double)subscriptionFee / maxMinutes) {
-      printf("   Стоимость минуты сверхлимита не может быть меньше стоимости минуты входящей в лимит!\n");
-      printf("   Введите стоимость минуты сверх лимита  > %d: ", (int)((double)subscriptionFee / maxMinutes));
+      printf("   Cost minute shold be more than cost minute from subscription fee!\n");
+      printf("   Input cost minut over the limit > %d: ", (int)((double)subscriptionFee / maxMinutes));
       scanf("%d", &costMinute);
     }
     price = subscriptionFee;
     if (talkTime > maxMinutes)
         price += (talkTime - maxMinutes) * costMinute;
-    printf("   Стоимость месячного обслуживания = %d", price);
+    printf("   РЎost of one-month service = %d", price);
     return 0;
 }
