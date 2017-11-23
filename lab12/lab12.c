@@ -42,6 +42,6 @@ int main() {
         changeDate(&day, &month, &year);
         fprintf(newFile, "Today + %d: %d.%d.%d\n", i, day, month, year);
     }
-
+    fclose(newFile);
     return 0;
 }
